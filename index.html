@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>proz cookie clicker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <!-- Left side: Cookie Section (Centered) -->
+        <div class="cookie-container">
+            <h1>Cookie Clicker (very real)</h1>
+            <img id="cookie" src="https://raw.githubusercontent.com/oogabooga-ampro/prozcookieclicker/refs/heads/main/images/cookie-clicker-clicker-heroes-incremental-game-cookie-png-61a8fa727c66536f0ea2728a1e351ad8.png" alt="Cookie">
+            <p class="cookie-info">Cookies: <span id="cookieCount">0</span></p>
+            <p class="cookie-info">Cookies per second: <span id="clickGain">1</span></p>
+            <div class="side-info top-left">
+                <p>Clicks: <span id="clickCount">0</span></p>
+            </div>
+            <div class="side-info bottom-left">
+                <p>Total Cookies: <span id="totalProduced">0</span></p>
+            </div>
+        </div>
+
+        <!-- Right side: Upgrades Section with black background -->
+        <div class="upgrades-container">
+            <div class="upgrade">
+                <button id="upgrade">Upgrade (Cost: 10)</button>
+                <p id="upgradeDescription">Each upgrade adds +1 cookie per click.</p>
+            </div>
+            <div class="upgrade">
+                <button id="upgrade2">Upgrade 2x Production (Cost: 100)</button>
+                <p id="upgrade2Description">Double the cookies per click.</p>
+            </div>
+            <button id="prestige">Prestige (Cost: 1,000 cookies)</button>
+            <p id="prestigeInfo">Prestige resets the game and gives a buff (10% per baked cookie).</p>
+            <p id="bakedCookies">Total Baked Cookies: 0</p>
+            <p id="prestigePreview">You would earn: 0 Baked Cookies</p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

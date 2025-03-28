@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8e8c8;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.main-container {
+    display: flex;
+    width: 90%;
+    height: 80%;
+}
+
+.cookie-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 380px; /* Add some spacing between cookie and upgrades */
+}
+
+#cookie {
+    width: 200px; /* Set the size of the cookie */
+    height: 200px; /* Set the size of the cookie */
+    cursor: pointer;
+    transition: transform 0.05s;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    user-select: none; /* Prevent text selection */
+    -webkit-user-drag: none; /* Disable image dragging in Webkit browsers */
+    -moz-user-select: none; /* Disable text selection in Firefox */
+    -ms-user-select: none; /* Disable text selection in IE/Edge */
+}
+
+#cookie:active {
+    transform: scale(0.9);
+}
+
+.upgrades-container {
+    width: 350px; /* Skinnier upgrade section */
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    position: fixed; /* Fix it to the right side of the screen */
+    right: 0;
+    top: 0;
+    border: solid black, 4px;
+}
+
+.upgrade {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    background-color: #8b5a2b;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+button:focus {
+    outline: none;
+}
+
+#prestige {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #8b5a2b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#prestigeInfo {
+    margin-top: 10px;
+    font-size: 14px;
+    font-style: italic;
+}
+
+#bakedCookies {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.side-info {
+    position: absolute;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+}
+
+.top-left {
+    bottom: 50px;
+    left: 10px;
+}
+
+.bottom-left {
+    bottom: 10px;
+    left: 10px;
+}
+
+.side-info p {
+    margin: 5px 0;
+}
+
+.cookie-info {
+    font-size: 20px; /* Adjust size as needed */
+    font-weight: bold;
+}
